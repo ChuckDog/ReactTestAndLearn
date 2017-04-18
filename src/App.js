@@ -3,6 +3,7 @@ import { HashRouter as Router, Route, browserHistory } from 'react-router-dom'
 import GetStarted from './GetStarted/GetStarted';
 import FilterableProductTable from './FilterableProductTable/FilterableProductTable';
 import Calculator from './Calculator/Calculator';
+import PuiTest from './PuiTest/PuiTest';
 import logo from './logo.svg';
 import './App.css';
 
@@ -14,6 +15,7 @@ class AppWrapper extends Component {
         <h2><a href="#/getStarted">Get Started</a></h2>
         <h2><a href="#/product_table">Filterable Product Table</a></h2>
         <h2><a href="#/calculator">Calculator</a></h2>
+        <h2><a href="#/PuiTest">PuiTest</a></h2>
       </div>
     );
   }
@@ -33,6 +35,7 @@ class App extends Component {
             <Route path="/getStarted" component={GetStarted} />
             <Route path="/product_table" component={FilterableProductTable} />
             <Route path="/calculator" component={Calculator} />
+            <Route path="/PuiTest" component={PuiTest} />
           </div>  
         </Router>
       </div>

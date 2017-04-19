@@ -36,7 +36,7 @@ class App extends Component {
           <div>
             <Route exact={true} path="/" component={AppWrapper} history={browserHistory} />
             <Route path="/getStarted" component={GetStarted} />
-            <Route path="/getStarted/message1/:id" component={MessageOne} />
+            <Route path="/getStarted/message1/:id/:name/:abc" component={MessageOne} />
             <Route path="/getStarted/message2/:id" component={MessageTwo} />
             <Route path="/product_table" component={FilterableProductTable} />
             <Route path="/calculator" component={Calculator} />
